@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector,useDispatch } from "react-redux";
 import "./style.css";
 const Frequency = () => {
-  
   const dispatch = useDispatch()
   // frequency and periodical data from reducer
   const frequencyList = useSelector((state) => state.frequency);
@@ -60,5 +59,4 @@ const Frequency = () => {
     </div>
   );
 };
-
 export default Frequency;
