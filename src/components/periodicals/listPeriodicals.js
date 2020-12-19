@@ -1,28 +1,18 @@
 import React from "react";
-import './style.css'
+import { useSelector } from "react-redux";
+import "./style.css";
 const ListPeriodicals = () => {
+  const periodicalList = useSelector((state) => state.periodicals);
   return (
     <div className="periodicals-info">
       <h2>PERIODICALS</h2>
       <div className="periodicals-list">
-        <div className="periodicals">
-          <span> Bathroom floor </span>
-        </div>
-        <div className="periodicals">
-          <span> Full window clean </span>
-        </div>
-        <div className="periodicals">
-          <span> Lounge chair </span>
-        </div>
-        <div className="periodicals">
-          <span> Dining room </span>
-        </div>
-        <div className="periodicals">
-          <span> High leval cleaning</span>
-        </div>
-        <div className="periodicals">
-          <span> Vacant room clean </span>
-        </div>
+        {/* list of  periodical */}
+        {periodicalList.map((item) => (
+          <div key={item.id} className="periodicals">
+            <span> {item.title} </span>
+          </div>
+        ))}
       </div>
     </div>
   );
