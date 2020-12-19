@@ -1,0 +1,37 @@
+.frequency-info{
+    padding: 10px;
+    border: 1px solid #ede7f6 ;
+    margin: 15px;
+}
+.frequency-info h2{
+    font-size: 14px;
+    color: #212121;
+    margin-bottom: 21px;
+}
+.frequency-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.frequency{
+    width: 230px;
+    border: 1px solid #ede7f6;
+    height: 400px;
+    margin: 12px;
+}
+.frequency h4{
+    background-color: rgb(87, 36, 126);
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;   
+}
+.periodicals{
+    flex: 0 1 20%;
+    font-size: 15px;
+    border: 1px solid rgb(255, 193, 7);
+    padding: 5px;
+    border-left: 5px solid rgb(255, 193, 7);
+    color: #111111;
+    margin: 5px;
+}
